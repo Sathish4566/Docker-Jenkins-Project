@@ -26,6 +26,6 @@ services:
   recharges:
     image: sathish4566/phoneperecharges:v1
     ports: 
-      -8003:80
+      - 8003:80
     deploy:
       replicas: 3
