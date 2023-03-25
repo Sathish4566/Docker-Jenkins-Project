@@ -1,0 +1,31 @@
+---
+version: "3"
+services:
+  train:
+    image: sathish4566/phonepetrain:v1
+    ports:
+      - 8000:80
+    volumes:
+      - volume1
+    deploy: 
+      replicas: 3
+  movies:
+    image: sathish4566/phonepemovies:v1
+    ports:
+      - 8001:80
+    volumes:
+      - volume2
+    deploy:
+      replicas: 3
+  dth:
+    image: sathish4566/phonepedth:v1
+    ports: 
+      - 8002:80
+  deploy:
+      replicas: 3
+  recharges:
+    image: sathish4566/phoneperecharges:v1
+    ports: 
+      -8003:80
+    deploy:
+      replicas: 3
