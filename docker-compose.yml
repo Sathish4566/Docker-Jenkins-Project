@@ -20,8 +20,8 @@ services:
     image: sathish4566/phonepedth:v1
     ports: 
       - 8002:80
-  deploy:
-    replicas: 3
+    deploy:
+      replicas: 3
   recharges:
     image: sathish4566/phoneperecharges:v1
     ports: 
