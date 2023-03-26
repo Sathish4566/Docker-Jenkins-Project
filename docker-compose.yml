@@ -1,7 +1,7 @@
 version: "3"
 services:
   train:
-    image: sathish4566/phonepetrain:v1
+    image: sathish4566/phonepedth:v1
     ports:
       - "8000:80"
     volumes:
@@ -9,7 +9,7 @@ services:
     deploy: 
       replicas: 3
   movies:
-    image: sathish4566/phonepemovies:v1
+    image: sathish4566/phoneperecharges:v1
     ports:
       - "8001:80"
     volumes:
