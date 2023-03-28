@@ -4,31 +4,23 @@ services:
     image: sathish4566/phonepetrain:v1
     ports:
       - "8004:80"
-    volumes:
-      - Volume1
     deploy: 
       replicas: 3
   movies:
     image: sathish4566/phonepemovies:v1
     ports:
       - "8005:80"
-    volumes:
-      - Volume2
     deploy:
       replicas: 3
   dth:
     image: sathish4566/phonepedth:v1
     ports: 
       - "8002:80"
-    volumes:
-      - Volume3
     deploy:
       replicas: 3
   recharges:
     image: sathish4566/phoneperecharges:v1
     ports: 
       - "8003:80"
-    volumes:
-      - Volume4
     deploy:
       replicas: 3
