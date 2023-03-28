@@ -29,6 +29,6 @@ services:
     ports: 
       - "8003:80"
     volumes:
-      - Volume1
+      - Volume4
     deploy:
       replicas: 3
